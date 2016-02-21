@@ -14,7 +14,7 @@
  
 </head>
  
-<body>
+<body ng-controller="HomeCtrl">
  
     <div class="container">
         <div class="jumbotron" style="padding-bottom:0px;">
@@ -26,7 +26,8 @@
             <label class="checkbox">
                 <a href="#"> Sign Up</a>
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+<!--         adding ng-click directive to the SignIn button -->
+        <button type="button" ng-click="SignIn($event)" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
  
     </div>
